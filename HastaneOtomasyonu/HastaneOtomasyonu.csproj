@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6341F2EC-5D1A-4F79-953E-E5351C9310C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HastaneOtomasyonu</RootNamespace>
+    <AssemblyName>HastaneOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGirisPaneli.Designer.cs">
+      <DependentUpon>frmGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\BilgiGüncellemeKontrolü.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HASTA\BilgiGüncellemeKontrolü.Designer.cs">
+      <DependentUpon>BilgiGüncellemeKontrolü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\frmHastaEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HASTA\frmHastaEkrani.Designer.cs">
+      <DependentUpon>frmHastaEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\frmHastaKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HASTA\frmHastaKayıt.Designer.cs">
+      <DependentUpon>frmHastaKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\frmHastaKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HASTA\frmHastaKullanici.Designer.cs">
+      <DependentUpon>frmHastaKullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\Giris.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucbilgilerigetir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucbilgilerigetir.Designer.cs">
+      <DependentUpon>ucbilgilerigetir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucbilgilerigüncelle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucbilgilerigüncelle.Designer.cs">
+      <DependentUpon>ucbilgilerigüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\uckisiselbilgilerhasta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\uckisiselbilgilerhasta.Designer.cs">
+      <DependentUpon>uckisiselbilgilerhasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucCalisanPersoneller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucCalisanPersoneller.Designer.cs">
+      <DependentUpon>ucCalisanPersoneller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucRandevuAl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucRandevuAl.Designer.cs">
+      <DependentUpon>ucRandevuAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucRandevuBilgileri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucRandevuBilgileri.Designer.cs">
+      <DependentUpon>ucRandevuBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucSigortaBilgileri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucSigortaBilgileri.Designer.cs">
+      <DependentUpon>ucSigortaBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucSonuclar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HASTA\Kontroller\ucSonuclar.Designer.cs">
+      <DependentUpon>ucSonuclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\frmHastaOdaBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\frmHastaOdaBilgileri.Designer.cs">
+      <DependentUpon>frmHastaOdaBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\frmPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\frmPersonel.Designer.cs">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\frmPersonelKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\frmPersonelKayıt.Designer.cs">
+      <DependentUpon>frmPersonelKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\frmPersonelKullanıcı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\frmPersonelKullanıcı.Designer.cs">
+      <DependentUpon>frmPersonelKullanıcı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\HastaOdaKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\HastaOdaKayıt.Designer.cs">
+      <DependentUpon>HastaOdaKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\frmHastaBilgileriGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\frmHastaBilgileriGüncelle.Designer.cs">
+      <DependentUpon>frmHastaBilgileriGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucCikisBilgileri.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucCikisBilgileri.Designer.cs">
+      <DependentUpon>ucCikisBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucHastaFatura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucHastaFatura.Designer.cs">
+      <DependentUpon>ucHastaFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucHastaKayıt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucHastaKayıt.Designer.cs">
+      <DependentUpon>ucHastaKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucOda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucOda.Designer.cs">
+      <DependentUpon>ucOda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucPersonelBilgileriGetir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucPersonelBilgileriGetir.Designer.cs">
+      <DependentUpon>ucPersonelBilgileriGetir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucRandevuAlPersonelGirişi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucRandevuAlPersonelGirişi.Designer.cs">
+      <DependentUpon>ucRandevuAlPersonelGirişi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucRandevuTümü.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucRandevuTümü.Designer.cs">
+      <DependentUpon>ucRandevuTümü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucSonuclarTumu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucSonuclarTumu.Designer.cs">
+      <DependentUpon>ucSonuclarTumu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucYeniFatura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucYeniFatura.Designer.cs">
+      <DependentUpon>ucYeniFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucHastaBilgileriTümü.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucHastaBilgileriTümü.Designer.cs">
+      <DependentUpon>ucHastaBilgileriTümü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucPersonelBilgileriGüncelle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PERSONEL\Kontroller\ucPersonelBilgileriGüncelle.Designer.cs">
+      <DependentUpon>ucPersonelBilgileriGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGirisPaneli.resx">
+      <DependentUpon>frmGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\BilgiGüncellemeKontrolü.resx">
+      <DependentUpon>BilgiGüncellemeKontrolü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\frmHastaEkrani.resx">
+      <DependentUpon>frmHastaEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\frmHastaKayıt.resx">
+      <DependentUpon>frmHastaKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\frmHastaKullanici.resx">
+      <DependentUpon>frmHastaKullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucbilgilerigetir.resx">
+      <DependentUpon>ucbilgilerigetir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucbilgilerigüncelle.resx">
+      <DependentUpon>ucbilgilerigüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\uckisiselbilgilerhasta.resx">
+      <DependentUpon>uckisiselbilgilerhasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucCalisanPersoneller.resx">
+      <DependentUpon>ucCalisanPersoneller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucRandevuAl.resx">
+      <DependentUpon>ucRandevuAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucRandevuBilgileri.resx">
+      <DependentUpon>ucRandevuBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucSigortaBilgileri.resx">
+      <DependentUpon>ucSigortaBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HASTA\Kontroller\ucSonuclar.resx">
+      <DependentUpon>ucSonuclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\frmHastaOdaBilgileri.resx">
+      <DependentUpon>frmHastaOdaBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\frmPersonel.resx">
+      <DependentUpon>frmPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\frmPersonelKayıt.resx">
+      <DependentUpon>frmPersonelKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\frmPersonelKullanıcı.resx">
+      <DependentUpon>frmPersonelKullanıcı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\HastaOdaKayıt.resx">
+      <DependentUpon>HastaOdaKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\frmHastaBilgileriGüncelle.resx">
+      <DependentUpon>frmHastaBilgileriGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucCikisBilgileri.resx">
+      <DependentUpon>ucCikisBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucHastaFatura.resx">
+      <DependentUpon>ucHastaFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucHastaKayıt.resx">
+      <DependentUpon>ucHastaKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucOda.resx">
+      <DependentUpon>ucOda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucPersonelBilgileriGetir.resx">
+      <DependentUpon>ucPersonelBilgileriGetir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucPersonelBilgileriGüncelle.resx">
+      <DependentUpon>ucPersonelBilgileriGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucRandevuAlPersonelGirişi.resx">
+      <DependentUpon>ucRandevuAlPersonelGirişi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucRandevuTümü.resx">
+      <DependentUpon>ucRandevuTümü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucSonuclarTumu.resx">
+      <DependentUpon>ucSonuclarTumu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucYeniFatura.resx">
+      <DependentUpon>ucYeniFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONEL\Kontroller\ucHastaBilgileriTümü.resx">
+      <DependentUpon>ucHastaBilgileriTümü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HastaneOtomasyonu.BL\HastaneOtomasyonu.BL.csproj">
+      <Project>{d3ae162c-b50c-462c-b7a8-7ae55943bfad}</Project>
+      <Name>HastaneOtomasyonu.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HastaneOtomasyonu.Entity\HastaneOtomasyonu.Entity.csproj">
+      <Project>{ce9bc19e-da61-4e58-8d62-7a605e61b314}</Project>
+      <Name>HastaneOtomasyonu.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HastaneOtomasyonu.Utilities\HastaneOtomasyonu.Utilities.csproj">
+      <Project>{a6bdb9aa-8671-4aa0-9f23-77775bea1773}</Project>
+      <Name>HastaneOtomasyonu.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

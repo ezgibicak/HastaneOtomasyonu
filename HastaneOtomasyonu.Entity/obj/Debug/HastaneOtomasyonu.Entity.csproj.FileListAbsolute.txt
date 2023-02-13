@@ -1,0 +1,12 @@
+C:\Users\AhmetMert\source\repos\HastaneOtomasyonu\HastaneOtomasyonu.Entity\bin\Debug\HastaneOtomasyonu.Entity.dll
+C:\Users\AhmetMert\source\repos\HastaneOtomasyonu\HastaneOtomasyonu.Entity\bin\Debug\HastaneOtomasyonu.Entity.pdb
+C:\Users\AhmetMert\source\repos\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.csprojAssemblyReference.cache
+C:\Users\AhmetMert\source\repos\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.csproj.CoreCompileInputs.cache
+C:\Users\AhmetMert\source\repos\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.dll
+C:\Users\AhmetMert\source\repos\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.pdb
+C:\Users\Lenovo\Desktop\projelerim\proje-20220725T145035Z-001\proje\HastaneOtomasyonu\HastaneOtomasyonu.Entity\bin\Debug\HastaneOtomasyonu.Entity.dll
+C:\Users\Lenovo\Desktop\projelerim\proje-20220725T145035Z-001\proje\HastaneOtomasyonu\HastaneOtomasyonu.Entity\bin\Debug\HastaneOtomasyonu.Entity.pdb
+C:\Users\Lenovo\Desktop\projelerim\proje-20220725T145035Z-001\proje\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\projelerim\proje-20220725T145035Z-001\proje\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\projelerim\proje-20220725T145035Z-001\proje\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.dll
+C:\Users\Lenovo\Desktop\projelerim\proje-20220725T145035Z-001\proje\HastaneOtomasyonu\HastaneOtomasyonu.Entity\obj\Debug\HastaneOtomasyonu.Entity.pdb
